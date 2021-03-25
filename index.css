@@ -55,6 +55,12 @@ h6 { font-size: 16px;}
     overflow: auto;
 }
 
+.s3 {
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
 .main-container {
     width: 1200px;
     margin: 0 auto;
@@ -62,19 +68,54 @@ h6 { font-size: 16px;}
 
 .header-wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5em 10em;
     grid-template-areas:
-        'profile-image name-title-wrapper personal-details-wrapper'
-        'bio-wrapper'
+        'profile-image-wrapper name-title-wrapper personal-details-wrapper'
+        'bio-wrapper bio-wrapper bio-wrapper'
         ;
 }
 
 .body-wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10em 10em 10em;
     grid-template-areas:
             'body-section-1 skill-graphic'
             'body-section-2 skill-graphic'
             'body-section-3 skill-graphic'
             ;
+}
+
+.footer-wrapper {
+    display: grid;
+}
+
+.profile-image-wrapper {
+    grid-area: profile-image-wrapper;
+}
+
+.name-title-wrapper {
+    grid-area: name-title-wrapper;
+}
+
+.personal-details-wrapper {
+    grid-area: personal-details-wrapper;
+}
+
+.personal-details-item {
+    grid-area: personal-details-item;
+}
+
+
+.bio-wrapper {
+    grid-area: bio-wrapper;
+}
+
+.body-section {
+    grid-area: body-section;
+}
+
+.skill-graphic {
+    grid-area: skill-graphic;
 }
