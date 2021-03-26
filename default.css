@@ -79,9 +79,9 @@ h6 { font-size: 16px;}
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,15 +117,15 @@ h6 { font-size: 16px;}
     padding: 10px;
 }
 
-#dot-1{
+#dot-1 {
 	background-color:  #FC6058;
 }
 
-#dot-2{
+#dot-2 {
 	background-color:  #FEC02F;
 }
 
-#dot-3{
+#dot-3 {
 	background-color:  #2ACA3E;
 }
 
@@ -254,6 +254,23 @@ h6 { font-size: 16px;}
 #corner-bl {
     bottom: -5px;
     left: -5px;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+#social_img {
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
