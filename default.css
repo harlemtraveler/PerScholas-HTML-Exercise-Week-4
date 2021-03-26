@@ -216,6 +216,10 @@ h6 { font-size: 16px;}
 
 #preview-shadow {
     background-color: var(--previewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 #preview {
